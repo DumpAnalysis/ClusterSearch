@@ -28,7 +28,7 @@ The element details dialog (silver): standard atomic weight, monoisotopic mass, 
 
 ## Background
 
-In the early 1990s I designed and implemented a cluster search and analysis system for a mass spectrometer: about 5,000 lines of C for MS-DOS. It included a helper periodic table dialog showing all elements in the standard periodic table view; clicking an element opened another dialog with its details. These pages are a browser-based re-creation of that system.
+In the early 1990s, I designed and implemented a cluster search and analysis system for a mass spectrometer: about 5,000 lines of C for MS-DOS. It included a helper periodic table dialog showing all elements in the standard periodic table view; clicking an element opened another dialog with its details. These pages are a browser-based re-creation of that system done via Claude Fable 5.1 Extra.
 
 ## Cluster Search
 

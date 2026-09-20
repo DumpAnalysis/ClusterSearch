@@ -8,6 +8,24 @@ Mass spectrum cluster search and analysis, with a periodic table of elements. Tw
 | `PeriodicTable.html` | Stand-alone periodic table in the standard 18-column layout. Click an element (or use the arrow keys and Enter) to open a details dialog with masses, isotopes, and properties. |
 | `demo_Ag_Cu_clusters.csv` | Synthetic profile spectrum (m/z 20–1700, 0.02 m/z sampling, Gaussian peaks at resolving power 3000 with Gaussian and shot noise): Ag<sub>n</sub><sup>+</sup> (n = 1–15), Cu<sub>n</sub><sup>+</sup> (n = 1–4), Ag<sub>n</sub>O<sup>+</sup>, Ag<sub>n</sub>O<sub>2</sub><sup>+</sup>, Ag<sub>n</sub>Cu<sup>+</sup> (n = 1–3), Na<sup>+</sup>, K<sup>+</sup>. The same spectrum is generated in-page by the **Demo spectrum** button. |
 
+## Screenshots
+
+The demo spectrum in `ClusterSearch.html` with its 23 detected peaks labelled; the hover readout gives the sample under the cursor and the nearest detected peak's intensity, FWHM and resolving power.
+
+![Demo spectrum with detected peaks](screenshots/spectrum.png)
+
+Zoomed to m/z 454–677: the Ag<sub>5</sub><sup>+</sup> isotope envelope (apex 538.522), the weaker Ag<sub>5</sub>O<sup>+</sup> envelope beside it, and Ag<sub>6</sub><sup>+</sup> at the right.
+
+![Zoomed isotope envelope](screenshots/spectrum-zoom.png)
+
+The periodic table dialog in `ClusterSearch.html`, with Ag, Cu and O selected for the composition search and their count ranges shown.
+
+![Periodic table dialog with elements selected for composition search](screenshots/periodic-table.png)
+
+The element details dialog (silver): standard atomic weight, monoisotopic mass, singly charged ion m/z, isotopes with masses and abundances, and properties.
+
+![Element details dialog for silver](screenshots/element-details.png)
+
 ## Background
 
 In the early 1990s I designed and implemented a cluster search and analysis system for a mass spectrometer: about 5,000 lines of C for MS-DOS. It included a helper periodic table dialog showing all elements in the standard periodic table view; clicking an element opened another dialog with its details. These pages are a browser-based re-creation of that system.

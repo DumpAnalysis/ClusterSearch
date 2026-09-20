@@ -339,6 +339,7 @@
 
   footer { margin-top: 18px; font-size: 0.78rem; color: var(--muted); max-width: 980px; }
   footer p { margin: 4px 0; }
+  footer .credit { margin-top: 10px; font-size: 0.72rem; }
 
   body.dragover::after { content: "Drop the CSV file to load it"; position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; background: rgba(36, 87, 197, 0.18); border: 3px dashed var(--accent); z-index: 50; pointer-events: none; }
 
@@ -563,6 +564,7 @@
     <p><strong>Method.</strong> Peaks: local maxima above a threshold with a minimum prominence; m/z from the log‑parabola vertex through the apex and its neighbours. Isotope patterns: convolution of isotopic abundance distributions with abundance‑weighted merging of peaks closer than the merge width. Composition search: bounded enumeration of element counts, candidates kept when an isotopologue falls within tolerance of the target, ranked by cosine similarity between theoretical and observed intensities. Series: chains of nodes at constant m/z spacing, spacing refined by least squares. See <em>Definitions</em> for the exact terms. m/z = (M − z·m<sub>e</sub>)/|z|, m<sub>e</sub> = 5.485 799 09 × 10<sup>−4</sup> u (CODATA 2018). Settings are kept in this browser's local storage.</p>
     <p><strong>Data sources.</strong> Isotopic masses: AME2020 (Wang et al. 2021). Isotopic abundances: CIAAW “Isotopic compositions of the elements 2021”; where CIAAW gives a range, the representative value is used. Standard atomic weights: IUPAC 2021 (Prohaska et al. 2022), shown to five significant figures in the table and in full in the details; for elements whose standard atomic weight is an interval, the conventional value is used; a bracketed value is the mass number of the longest-lived isotope of an element with no stable isotopes. All three via the <code>periodictable</code> Python package v2.1.0, except uranium abundances, which that package omits and which are taken directly from CIAAW representative values.</p>
     <p>Element properties (electron configuration, electronegativity, phase, melting/boiling points, density, ionization energy, electron affinity, molar heat, descriptions): <a href="https://github.com/Bowserinator/Periodic-Table-JSON">Bowserinator/Periodic-Table-JSON</a>, a Wikipedia-derived dataset; treat those values as approximate. Monoisotopic mass here means the mass of the most abundant naturally occurring isotope.</p>
+    <p class="credit">Concept by Dmitry Vostokov, <a href="https://dumpanalysis.org">DumpAnalysis.org</a></p>
   </footer>
 
 <script>
